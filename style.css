@@ -3,6 +3,20 @@
   padding: 0;
   font-family: sans-serif;
 }
+@keyframes moveSquare {
+    0% {
+        top: 40%;
+    }
+    25% {
+        top: 60%;
+    }
+    50% {
+        top: 40%;
+    }
+    100% {
+        top: 50%;
+    }
+}
 .main-container{
   position: absolute;
   height: 100%;
@@ -22,6 +36,7 @@
   padding: 5px;
   border-radius: 10px;
   overflow: hidden;
+  animation: moveSquare 1200ms;
 }
 
 .button-container{
