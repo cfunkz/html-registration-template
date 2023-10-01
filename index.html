@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Login/Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="small-container">
+            <div class="button-container">
+                <div id="button"></div>
+                <button class="toggle-button" type="button" onclick="login()">LOG IN</button>
+                <button class="toggle-button" type="button" onclick="register()">SIGN UP</button>
+            </div>
+            <form id="login" class="entry-container">
+                <input type="text" class="entry-field" placeholder="Username" required autocomplete="on">
+                <input type="password" class="entry-field" placeholder="Password" required autocomplete="current-password">
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="login-button">LOG IN</button>
+            </form>
+            <form id="register" class="entry-container">
+                <input type="email" class="entry-field" placeholder="E-Mail" required autocomplete="email">
+                <input type="username" class="entry-field" placeholder="Username" required autocomplete="on">
+                <input type="password" class="entry-field" placeholder="Password" required autocomplete="current-password">
+                <input type="checkbox" class="check-box"><span>I accept the <a href="#">terms</a> & <a href="#">conditions</a></span>
+                <button type="submit" class="register-button">REGISTER</button>
+            </form>
+        </div>
+    </div>
+    <script>
+      var a = document.getElementById("login");
+      var b = document.getElementById("register");
+      var c = document.getElementById("button");
+      function register(){
+        a.style.left = "-425px";
+        b.style.left = "25px";
+        c.style.left = "110px";
+      }
+      function login(){
+        a.style.left = "25px";
+        b.style.left = "425px";
+        c.style.left = "0px";
+      }
+    </script>
+</body>
+</html>
