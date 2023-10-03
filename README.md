@@ -1,3 +1,3 @@
 # html-registration-template
 
-[VIEW TEMPLATE](https://didis97.github.io/html-registration-template/index.html)
+[VIEW TEMPLATE](https://cfunkz.github.io/html-registration-template/index.html)
